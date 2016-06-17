@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multistep Registration Form- Demo Preview</title>
+<meta content="noindex, nofollow" name="robots">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="multi_step_form.js"></script>
+</head>
+<body> 
+<div class="content">
+<!-- Multistep Form -->
+<div class="main">
+<form action="" class="regform" method="get">
+<!-- Progress Bar -->
+
+<!-- Fieldsets -->
+<fieldset id="first">
+<h2 class="title">Create  gjg your account</h2>
+<p class="subtitle">Step 1</p>
+<input class="text_field" name="email" placeholder="Email" type="text">
+<input class="text_field" name="pass" placeholder="Password" type="password">
+<input class="text_field" name="cpass" placeholder="Confirm Password" type="password">
+<input class="next_btn" name="next" type="button" value="Next">
+</fieldset>
+<fieldset>
+<h2 class="title">Educational Profiles</h2>
+<p class="subtitle">Step 2</p>
+<select class="options">
+<option>--Select hobby--</option>
+<option>fooball</option>
+<option>surf</option>
+<option>baceketball</option>
+<option>hoky</option>
+</select>
+<input class="text_field" name="oldage" placeholder="age" type="text">
+<input class="text_field" name="pyear" placeholder="got here from w24lch" type="text">
+<label>relashonchipe</label>
+<input class="rad" name="gender" type="radio">maried
+<input class="rad" name="gender" type="radio">single
+<input class="pre_btn" name="previous" type="button" value="Previous">
+<input class="next_btn" name="next" type="button" value="Next">
+</fieldset>
+<!-- IMPORTANT:  FORM's enctype must be "multipart/form-data" -->
+<form method="post" action="upload-page.php" enctype="multipart/form-data">
+  <input name="filesToUpload[]" id="filesToUpload" type="file" multiple="upload" />
+<input class="text_field" name="oldage" placeholder="comments" type="text">
+</form>
+</form>
+</div>
+</div>
+</body>
+</html>
